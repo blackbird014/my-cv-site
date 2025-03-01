@@ -1,22 +1,94 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Andrea Merli's CV" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+				color: #333;
+				line-height: 1.6;
+				margin: 0;
+				padding: 0;
+			}
+			header {
+				background: #3273dc;
+				color: #fff;
+				padding: 1rem;
+				text-align: center;
+			}
+			main {
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 40px;
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			}
+			h1, h2, h3 {
+				color: #3273dc;
+			}
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 0.5rem;
+			}
+			h2 {
+				font-size: 2rem;
+				margin-top: 1.5rem;
+				padding-left: 20px;
+			}
+			h3 {
+				font-size: 1.5rem;
+				margin-top: 1.2rem;
+				padding-left: 40px;
+			}
+			p, ul {
+				margin-bottom: 1rem;
+				padding-left: 60px;
+			}
+			ul {
+				list-style-type: disc;
+			}
+			li {
+				margin-bottom: 0.5rem;
+			}
+			footer {
+				text-align: center;
+				margin-top: 20px;
+				padding: 10px;
+				font-size: 0.9rem;
+				color: #666;
+			}
+			hr {
+				margin: 2rem auto;
+				width: 90%;
+				border: none;
+				border-top: 1px solid #ddd;
+			}
+		</style>
 	</head>
 	<body>
-		<slot />
+		<header>
+			<h1>{title}</h1>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer>
+			<p>Contact: andrehmerli@gmail.com | +41 (0) 79 775 19 50</p>
+		</footer>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
