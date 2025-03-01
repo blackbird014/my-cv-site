@@ -39,14 +39,15 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Configure Pages
+      - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-          retention-days: 1
+          name: github-pages
 
   deploy:
     needs: build
@@ -61,4 +62,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages 
