@@ -32,13 +32,17 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: List dist directory
+        run: ls -la dist
+
       - name: Configure Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          name: github-pages
+          path: dist
 
   deploy:
     needs: build
@@ -46,6 +50,9 @@ jobs:
     environment:
       name: github-pages  # Ensure this environment exists
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
