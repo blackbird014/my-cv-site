@@ -4,10 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-     "build": "astro build && ./build.sh",
-     "start": "astro start"
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "astro build && ./build.sh",
+    "start": "astro start",
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "^5.4.0"
