@@ -33,11 +33,23 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Show current directory
+        run: pwd && ls -la
+
       - name: Install dependencies
         run: npm ci
 
       - name: Build site
         run: npm run build
+
+      - name: Show build output
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "\nDirectory structure:"
+          ls -R
+          echo "\nDist directory contents:"
+          ls -la dist/
 
       - name: Setup Pages
         id: pages
