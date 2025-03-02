@@ -5,13 +5,6 @@ SOURCE_FILE="src/pages/index.md"
 OUTPUT_DIR="dist"
 PUBLIC_DIR="public"
 
-# Clean the output directories if they exist
-if [ -d "$OUTPUT_DIR" ]; then
-  echo "Cleaning $OUTPUT_DIR directory..."
-  rm -rf "$OUTPUT_DIR"/*
-fi
-
-
 
 # Create the output directories if they don't exist
 mkdir -p "$OUTPUT_DIR"
