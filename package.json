@@ -3,8 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build && ./build.sh",
+    "clean": "rm -rf dist/* public/my-cv.pdf public/my-cv.tex",
+    "dev": "npm run clean && astro dev",
+    "build": "npm run clean && astro build && ./build.sh",
     "start": "astro start",
     "preview": "astro preview"
   },
