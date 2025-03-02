@@ -14,3 +14,6 @@ pandoc "$SOURCE_FILE" -o "$OUTPUT_DIR/my-cv.pdf" --pdf-engine=xelatex
 pandoc "$SOURCE_FILE" -o "$OUTPUT_DIR/my-cv.tex"
 
 echo "PDF and LaTeX files generated in $OUTPUT_DIR"
+
+# Make the script executable
+chmod +x build.sh
