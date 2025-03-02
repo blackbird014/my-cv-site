@@ -40,8 +40,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Make build script executable
+        run: chmod +x build.sh
+
       - name: Build site
         run: npm run build
+
+      - name: Verify public directory
+        run: |
+          echo "Contents of public directory:"
+          mkdir -p public
+          ls -la public/
+          echo "\nChecking if PDF and TEX files exist:"
+          [ -f "public/my-cv.pdf" ] && echo "PDF file exists" || echo "PDF file does not exist"
+          [ -f "public/my-cv.tex" ] && echo "TEX file exists" || echo "TEX file does not exist"
 
       - name: List build output
         run: |
