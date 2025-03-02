@@ -11,10 +11,7 @@ if [ -d "$OUTPUT_DIR" ]; then
   rm -rf "$OUTPUT_DIR"/*
 fi
 
-if [ -d "$PUBLIC_DIR" ]; then
-  echo "Cleaning $PUBLIC_DIR directory..."
-  rm -rf "$PUBLIC_DIR"/*
-fi
+
 
 # Create the output directories if they don't exist
 mkdir -p "$OUTPUT_DIR"
