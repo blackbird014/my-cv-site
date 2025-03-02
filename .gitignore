@@ -1,5 +1,7 @@
 # build output
 dist/
+public/my-cv.pdf
+public/my-cv.tex
 
 # generated types
 .astro/
