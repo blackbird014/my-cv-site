@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 const isProd = import.meta.env.PROD;
-const basePath = isProd ? '' : '/dist';
+const basePath = isProd ? '/my-cv-site' : '/dist';
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ const basePath = isProd ? '' : '/dist';
 		<meta charset="UTF-8" />
 		<meta name="description" content="Andrea Merli's CV" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={`${basePath}/favicon.svg`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<style>
@@ -80,6 +80,18 @@ const basePath = isProd ? '' : '/dist';
 				border: none;
 				border-top: 1px solid #ddd;
 			}
+			.download-links {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 2rem;
+			}
+			.download-links a {
+				color: #3273dc;
+				text-decoration: none;
+			}
+			.download-links a:hover {
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body>
@@ -87,7 +99,7 @@ const basePath = isProd ? '' : '/dist';
 			<h1>{title}</h1>
 		</header>
 		<main>
-			<div>
+			<div class="download-links">
 				<a href={`${basePath}/my-cv.pdf`} download>Download CV as PDF</a>
 				<a href={`${basePath}/my-cv.tex`} download>Download CV as LaTeX</a>
 			</div>
