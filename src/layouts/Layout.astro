@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const isProd = import.meta.env.PROD;
+const basePath = isProd ? '' : '/dist';
 ---
 
 <!doctype html>
@@ -86,8 +88,8 @@ const { title } = Astro.props;
 		</header>
 		<main>
 			<div>
-				<a href="my-cv.pdf" download>Download CV as PDF</a>
-				<a href="my-cv.tex" download>Download CV as LaTeX</a>
+				<a href={`${basePath}/my-cv.pdf`} download>Download CV as PDF</a>
+				<a href={`${basePath}/my-cv.tex`} download>Download CV as LaTeX</a>
 			</div>
 			<slot />
 		</main>
