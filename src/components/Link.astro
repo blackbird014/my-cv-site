@@ -1,0 +1,16 @@
+---
+const { href, ...props } = Astro.props;
+
+// Get the base URL from Astro config
+const baseUrl = import.meta.env.BASE_URL || '';
+
+// Ensure the href starts with a forward slash
+const normalizedHref = href.startsWith('/') ? href : `/${href}`;
+
+// Combine base URL with href, avoiding double slashes
+const fullHref = `${baseUrl}${normalizedHref}`;
+---
+
+<a href={fullHref} {...props}>
+  <slot />
+</a> 
