@@ -1,0 +1,9 @@
+---
+const isProd = import.meta.env.PROD;
+const basePath = isProd ? '' : '/dist';
+---
+
+<div>
+    <a href={`${basePath}/my-cv.pdf`} download>Download CV as PDF</a>
+    <a href={`${basePath}/my-cv.tex`} download>Download CV as LaTeX</a>
+</div> 

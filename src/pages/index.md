@@ -2,11 +2,9 @@
 layout: ../layouts/Layout.astro
 title: Andrea Merli - CV
 ---
+import DownloadLinks from '../components/DownloadLinks.astro';
 
-<div>
-    <a href="my-cv.pdf" download>Download CV as PDF</a>
-    <a href="my-cv.tex" download>Download CV as LaTeX</a>
-</div>
+<DownloadLinks />
 
 # Curriculum Vitae    
 
