@@ -12,7 +12,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Andrea Merli's CV" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<style>
@@ -78,6 +78,18 @@ const { title } = Astro.props;
 				border: none;
 				border-top: 1px solid #ddd;
 			}
+			.download-links {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 2rem;
+			}
+			.download-links a {
+				color: #3273dc;
+				text-decoration: none;
+			}
+			.download-links a:hover {
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body>
@@ -85,6 +97,10 @@ const { title } = Astro.props;
 			<h1>{title}</h1>
 		</header>
 		<main>
+			<div class="download-links">
+				<a href={`${import.meta.env.BASE_URL}/my-cv.pdf`} download>Download CV as PDF</a>
+				<a href={`${import.meta.env.BASE_URL}/my-cv.tex`} download>Download CV as LaTeX</a>
+			</div>
 			<slot />
 		</main>
 		<footer>
