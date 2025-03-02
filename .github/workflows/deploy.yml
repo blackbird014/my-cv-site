@@ -40,12 +40,12 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Debug - Show build output
+      - name: List build output
         run: |
-          echo "Current directory contents:"
-          ls -la
-          echo "\nDist directory contents:"
+          echo "Contents of dist directory:"
           ls -la dist/
+          echo "\nFull directory structure:"
+          find dist -type f
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
