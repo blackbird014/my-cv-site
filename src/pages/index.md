@@ -4,8 +4,8 @@ title: Andrea Merli - CV
 ---
 
 <div>
-    <a href="dist/my-cv.pdf" download>Download CV as PDF</a>
-    <a href="dist/my-cv.tex" download>Download CV as LaTeX</a>
+    <a href={import.meta.env.BASE_URL + 'my-cv.pdf'} download>Download CV as PDF</a>
+    <a href={import.meta.env.BASE_URL + 'my-cv.tex'} download>Download CV as LaTeX</a>
 </div>
 
 # Curriculum Vitae    
