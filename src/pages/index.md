@@ -102,11 +102,16 @@ Software Development and Education positions
 
 ## Education
 
+
+### **University of Zurich** (2025)
+🔹 **Master of Advanced Studies in Finance**
+
+### **Università degli Studi di Milano** (1992-2000)
+🔹 **M.Sc. Physics**
+
+
 ### **University of Zurich** (2019)
 🔹 **CAS Blockchain**
-- Part 1: Blockchain technology (Completed)
-- Part 2: Blockchain business and economics (Ongoing)
-- Part 3: Blockchain regulation and law (Ongoing)
 
 ### **University of Zurich** (2014-2016)
 🔹 **DAS Finance**
@@ -115,11 +120,10 @@ Software Development and Education positions
 - Risk Management Practices
 - Financial Markets
 - Asset Management and Derivatives
-
-### **Università degli Studi di Milano** (1992-2000)
-🔹 **M.Sc. Physics**
-
 ---
+
+
+
 
 ## Certifications and Training
 
