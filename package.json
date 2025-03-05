@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf dist && rm -f public/downloads/my-cv.pdf public/downloads/my-cv.tex",
     "dev": "astro dev",
-    "build": "npm run clean && astro build",
+    "build": "npm run clean && npm run convert && astro build",
     "convert": "./convert.sh",
     "start": "astro start",
     "preview": "astro preview"
