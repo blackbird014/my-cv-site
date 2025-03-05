@@ -46,6 +46,9 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Generate PDF and TeX
+        run: npm run convert
+
       - name: Verify public directory
         run: |
           echo "Contents of public directory:"
