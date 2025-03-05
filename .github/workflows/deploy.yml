@@ -52,11 +52,10 @@ jobs:
       - name: Verify public directory
         run: |
           echo "Contents of public directory:"
-          mkdir -p public
-          ls -la public/
+          ls -la public/downloads/  
           echo "\nChecking if PDF and TEX files exist:"
-          [ -f "public/my-cv.pdf" ] && echo "PDF file exists" || echo "PDF file does not exist"
-          [ -f "public/my-cv.tex" ] && echo "TEX file exists" || echo "TEX file does not exist"
+          [ -f "public/downloads/my-cv.pdf" ] && echo "PDF file exists" || echo "PDF file does not exist"
+          [ -f "public/downloads/my-cv.tex" ] && echo "TEX file exists" || echo "TEX file does not exist"
 
       - name: List build output
         run: |
