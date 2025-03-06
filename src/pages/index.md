@@ -7,10 +7,10 @@ title: Andrea Merli - CV
 
 ## Personal Information  
 **First Name / Surname**: Andrea Merli  
-**Address**: Dammstrasse 8, 8810 Horgen, Switzerland  
-**Telephone(s)**: +41 (0) 79 775 19 50  
-**E-mail**: andrehmerli@gmail.com  
-**Date of Birth**: January 29, 1972  
+**Address**:   
+**Telephone(s)**:   
+**E-mail**:   
+**Date of Birth**:   
 **Work Permit in Switzerland**: C – Residence permit  
 
 ---
@@ -27,7 +27,7 @@ To enhance my research and development processes, I leverage artificial intellig
 
 - As **personal projects** utilizing AI.
   - Developed a tool for monitoring the Ethereum blockchain, extracting data on lending protocols.
-  - Established a comprehensive company infrastructure, either locally or in the cloud, to facilitate a complete software lifecycle from development to CI/CD, showcasing the capability to simulate and deliver various combinations.
+  - Built for personal training full-scale infrastructure, locally or in the cloud, that mirrors a corporate environment, enabling end-to-end software development, testing, and CI/CD with the goal of simulaitng real-world conditions
   - Created multiple Proofs of Concept (PoCs), including a connection between Injective chain indexers and an agent that integrates data with calls to Allora's decentralized AI, generating reports on potential arbitrage opportunities. Developed as generic code to connect to any blockchain and integrate any AI model.
   - Constructed a toy blockchain as a Cosmos zone, capable of managing Proof of Stake (PoS) and serving foundational building blocks for decentralized finance (DeFi), including decentralized exchanges (DeXs) and lending protocols.
 
@@ -55,7 +55,7 @@ To enhance my research and development processes, I leverage artificial intellig
 ## Work Experience
 
 ### **Swissquant Group AG**
-📅 *08/2016 - present*  
+📅 *08/2016 - 09/2022*  
 🔹 **Position**: Quant Developer
 
 **Main Activities**:
