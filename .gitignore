@@ -2,8 +2,7 @@
 dist/
 public/my-cv.pdf
 public/my-cv.tex
-public/downloads/my-cv.pdf
-public/downloads/my-cv.tex
+
 
 # generated types
 .astro/
@@ -26,3 +25,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# generated files
+public/downloads/my-cv.pdf
+public/downloads/my-cv.tex
